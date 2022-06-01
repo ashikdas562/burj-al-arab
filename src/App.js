@@ -1,5 +1,6 @@
 import React, { createContext, useState } from 'react';
 import './App.css';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -9,6 +10,7 @@ import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Book from './components/Book/Book';
 import Header from './components/Header/Header';
+import Register from './components/Register/Register';
 
 function App() {
   return (
@@ -20,6 +22,9 @@ function App() {
             </Route>
             <Route path="/login">
               <Login />
+            </Route>
+            <Route path="/register">
+              <Register></Register>
             </Route>
             <Route path="/book/:bedType">
               <Book />
